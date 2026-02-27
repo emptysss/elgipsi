@@ -4,12 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite preview",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "serve . -l 5173 --no-clipboard",
+    "build": "echo 'Pre-built static site'",
+    "preview": "serve . -l 5173 --no-clipboard"
   },
   "devDependencies": {
     "playwright": "^1.58.2",
+    "serve": "^14.2.0",
     "vite": "^5.0.0"
   }
 }
