@@ -1,10 +1,12 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  optimizeDeps: {
-    noDiscovery: true,
+  // Serve the root directory as the built output for preview mode
+  build: {
+    outDir: ".",
   },
-  server: {
-    port: 3000,
+  preview: {
+    port: 5173,
+    strictPort: true,
   },
 });
